@@ -43,7 +43,7 @@ const PaymentForm = ({ prefill = {}, onSuccess }) => {
     total,
     payment_method: paymentMethod,
     completed_at: new Date().toISOString(),
-    business_id: '268e0ae9-c539-471c-b4c2-1663cf598436', // ✅ hardcoded
+    business_id: '6499ffe7-b1e9-4ee8-9e85-8cdd8e07db87', // ✅ hardcoded
   },
 ]);
 

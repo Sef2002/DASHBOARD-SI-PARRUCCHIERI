@@ -15,7 +15,7 @@ import SlidingPanelPayment from '../components/payment/SlidingPanelPayment';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-const BUSINESS_ID = '268e0ae9-c539-471c-b4c2-1663cf598436';
+const BUSINESS_ID = '6499ffe7-b1e9-4ee8-9e85-8cdd8e07db87';
 
 const generateTimeSlots = () => {
   const slots = [];
