@@ -101,7 +101,7 @@ export default function CreateTreatmentModal({
             </button>
             <button
               onClick={handleSubmit}
-              className="px-4 py-2 rounded bg-[#5c3b30] text-white hover:bg-[#472c24]"
+              className="px-4 py-2 rounded bg-[#7AC143] text-white hover:bg-[#5a9332]"
               disabled={saving}
             >
               {saving ? "Salvo…" : "Salva"}

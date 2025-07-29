@@ -110,7 +110,7 @@ export default function EditTreatmentModal({ isOpen, onClose, onSave, defaultVal
           </button>
           <button
             onClick={handleSave}
-            className="px-4 py-2 bg-[#5b3623] text-white rounded hover:bg-[#472c1b]"
+            className="px-4 py-2 bg-[#7AC143] text-white rounded hover:bg-[#5a9332]"
           >
             {isEditing ? "Aggiorna" : "Salva"}
           </button>

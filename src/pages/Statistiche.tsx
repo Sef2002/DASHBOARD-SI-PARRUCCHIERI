@@ -21,7 +21,7 @@ const SimpleBarChart = () => {
       {data.map((item, index) => (
         <div key={index} className="flex flex-col items-center">
           <div 
-            className="w-12 bg-[#5D4037] hover:bg-[#4E342E] transition-all rounded-t-md"
+            className="w-12 bg-[#7AC143] hover:bg-[#5a9332] transition-all rounded-t-md"
             style={{ height: `${(item.value / maxValue) * 200}px` }}
           ></div>
           <div className="text-xs mt-2">{item.day}</div>
@@ -64,7 +64,7 @@ const SimpleLineChart = () => {
         <polyline
           points={getPoints()}
           fill="none"
-          stroke="#5D4037"
+          stroke="#7AC143"
           strokeWidth="2"
         />
         {data.map((item, i) => {
@@ -77,7 +77,7 @@ const SimpleLineChart = () => {
               cx={x}
               cy={y}
               r="2"
-              fill="#5D4037"
+              fill="#7AC143"
             />
           );
         })}
