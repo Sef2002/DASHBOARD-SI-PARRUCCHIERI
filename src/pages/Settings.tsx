@@ -36,7 +36,7 @@ const Settings: React.FC = () => {
         </div>
         <button
           onClick={handleSave}
-          className="bg-[#7AC143] text-white px-4 py-2 rounded-lg flex items-center hover:bg-[#5a9332] transition-colors"
+          className="bg-[#5D4037] text-white px-4 py-2 rounded-lg flex items-center hover:bg-[#4E342E] transition-colors"
         >
           <Save size={18} className="mr-1" />
           Salva Modifiche
@@ -47,7 +47,7 @@ const Settings: React.FC = () => {
         {/* Calendar Management */}
         <div className="bg-white rounded-lg shadow p-6">
           <div className="flex items-center mb-4">
-            <Calendar size={24} className="text-[#7AC143] mr-3" />
+            <Calendar size={24} className="text-[#5D4037] mr-3" />
             <h2 className="text-lg font-semibold text-gray-800">Gestione Calendario</h2>
           </div>
           
@@ -64,7 +64,7 @@ const Settings: React.FC = () => {
                     value="standard"
                     checked={slotType === 'standard'}
                     onChange={(e) => setSlotType(e.target.value as 'standard' | 'dynamic')}
-                    className="h-4 w-4 text-[#7AC143] focus:ring-[#7AC143] border-gray-300"
+                    className="h-4 w-4 text-[#5D4037] focus:ring-[#5D4037] border-gray-300"
                   />
                   <span className="ml-3 text-sm">
                     <span className="font-medium">Slot Standardizzati (15m)</span>
@@ -80,7 +80,7 @@ const Settings: React.FC = () => {
                     value="dynamic"
                     checked={slotType === 'dynamic'}
                     onChange={(e) => setSlotType(e.target.value as 'standard' | 'dynamic')}
-                    className="h-4 w-4 text-[#7AC143] focus:ring-[#7AC143] border-gray-300"
+                    className="h-4 w-4 text-[#5D4037] focus:ring-[#5D4037] border-gray-300"
                   />
                   <span className="ml-3 text-sm">
                     <span className="font-medium">Slot Dinamici</span>
@@ -103,7 +103,7 @@ const Settings: React.FC = () => {
                     type="time"
                     value={workingHours.start}
                     onChange={(e) => setWorkingHours(prev => ({ ...prev, start: e.target.value }))}
-                    className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#7AC143]"
+                    className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#5D4037]"
                   />
                 </div>
                 <div>
@@ -112,7 +112,7 @@ const Settings: React.FC = () => {
                     type="time"
                     value={workingHours.end}
                     onChange={(e) => setWorkingHours(prev => ({ ...prev, end: e.target.value }))}
-                    className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#7AC143]"
+                    className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#5D4037]"
                   />
                 </div>
               </div>
@@ -123,7 +123,7 @@ const Settings: React.FC = () => {
         {/* Notifications */}
         <div className="bg-white rounded-lg shadow p-6">
           <div className="flex items-center mb-4">
-            <Bell size={24} className="text-[#7AC143] mr-3" />
+            <Bell size={24} className="text-[#5D4037] mr-3" />
             <h2 className="text-lg font-semibold text-gray-800">Notifiche</h2>
           </div>
           
@@ -140,7 +140,7 @@ const Settings: React.FC = () => {
                   onChange={(e) => setNotifications(prev => ({ ...prev, email: e.target.checked }))}
                   className="sr-only peer"
                 />
-                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#7AC143]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#7AC143]"></div>
+                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#5D4037]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#5D4037]"></div>
               </label>
             </div>
 
@@ -156,7 +156,7 @@ const Settings: React.FC = () => {
                   onChange={(e) => setNotifications(prev => ({ ...prev, sms: e.target.checked }))}
                   className="sr-only peer"
                 />
-                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#7AC143]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#7AC143]"></div>
+                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#5D4037]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#5D4037]"></div>
               </label>
             </div>
 
@@ -172,7 +172,7 @@ const Settings: React.FC = () => {
                   onChange={(e) => setNotifications(prev => ({ ...prev, push: e.target.checked }))}
                   className="sr-only peer"
                 />
-                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#7AC143]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#7AC143]"></div>
+                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#5D4037]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#5D4037]"></div>
               </label>
             </div>
           </div>
@@ -181,7 +181,7 @@ const Settings: React.FC = () => {
         {/* Account Settings */}
         <div className="bg-white rounded-lg shadow p-6">
           <div className="flex items-center mb-4">
-            <User size={24} className="text-[#7AC143] mr-3" />
+            <User size={24} className="text-[#5D4037] mr-3" />
             <h2 className="text-lg font-semibold text-gray-800">Account</h2>
           </div>
           
@@ -193,7 +193,7 @@ const Settings: React.FC = () => {
               <select
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
-                className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#7AC143]"
+                className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#5D4037]"
               >
                 <option value="it">Italiano</option>
                 <option value="en">English</option>
@@ -209,7 +209,7 @@ const Settings: React.FC = () => {
               <select
                 value={theme}
                 onChange={(e) => setTheme(e.target.value)}
-                className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#7AC143]"
+                className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#5D4037]"
               >
                 <option value="light">Chiaro</option>
                 <option value="dark">Scuro</option>
@@ -222,7 +222,7 @@ const Settings: React.FC = () => {
         {/* Security */}
         <div className="bg-white rounded-lg shadow p-6">
           <div className="flex items-center mb-4">
-            <Shield size={24} className="text-[#7AC143] mr-3" />
+            <Shield size={24} className="text-[#5D4037] mr-3" />
             <h2 className="text-lg font-semibold text-gray-800">Sicurezza</h2>
           </div>
           
@@ -248,7 +248,7 @@ const Settings: React.FC = () => {
       {/* Additional Settings */}
       <div className="mt-6 bg-white rounded-lg shadow p-6">
         <div className="flex items-center mb-4">
-          <Palette size={24} className="text-[#7AC143] mr-3" />
+          <Palette size={24} className="text-[#5D4037] mr-3" />
           <h2 className="text-lg font-semibold text-gray-800">Personalizzazione</h2>
         </div>
         
@@ -263,7 +263,7 @@ const Settings: React.FC = () => {
           <div className="p-4 border border-gray-200 rounded-lg">
             <h3 className="text-sm font-medium text-gray-700 mb-2">Colore Principale</h3>
             <div className="flex space-x-2">
-              <div className="w-8 h-8 bg-[#7AC143] rounded-full border-2 border-gray-300"></div>
+              <div className="w-8 h-8 bg-[#5D4037] rounded-full border-2 border-gray-300"></div>
               <div className="w-8 h-8 bg-blue-600 rounded-full border-2 border-gray-300"></div>
               <div className="w-8 h-8 bg-green-600 rounded-full border-2 border-gray-300"></div>
               <div className="w-8 h-8 bg-purple-600 rounded-full border-2 border-gray-300"></div>
@@ -272,7 +272,7 @@ const Settings: React.FC = () => {
 
           <div className="p-4 border border-gray-200 rounded-lg">
             <h3 className="text-sm font-medium text-gray-700 mb-2">Layout Dashboard</h3>
-            <select className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#7AC143]">
+            <select className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#5D4037]">
               <option>Compatto</option>
               <option>Standard</option>
               <option>Espanso</option>

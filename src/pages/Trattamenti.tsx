@@ -48,7 +48,7 @@ export default function Trattamenti() {
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-semibold">Trattamenti</h2>
         <button
-          className="bg-[#7AC143] hover:bg-[#5a9332] text-white px-4 py-2 rounded"
+          className="bg-[#5c3b30] hover:bg-[#472c24] text-white px-4 py-2 rounded"
           onClick={() => setCreating(true)}
         >
           + Nuovo Trattamento
@@ -70,7 +70,7 @@ export default function Trattamenti() {
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-1 rounded-full ${
                 selectedCategory === cat
-                  ? "bg-[#7AC143] text-white"
+                  ? "bg-[#5c3b30] text-white"
                   : "bg-gray-100 text-gray-700"
               }`}
             >

@@ -104,7 +104,7 @@ const PaymentForm = ({ prefill = {}, onSuccess }) => {
       <button
         type="submit"
         disabled={loading || !paymentMethod}
-        className="w-full py-3 px-4 bg-[#7AC143] text-white rounded-xl hover:bg-[#5a9332] transition-colors font-medium disabled:opacity-50"
+        className="w-full py-3 px-4 bg-black text-white rounded-xl hover:bg-gray-800 transition-colors font-medium disabled:opacity-50"
       >
         {loading ? 'Salvataggio...' : 'Conferma Pagamento'}
       </button>

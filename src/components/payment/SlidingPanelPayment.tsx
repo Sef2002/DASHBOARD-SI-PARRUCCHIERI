@@ -20,7 +20,7 @@ const SlidingPanelPayment = ({ visible, onClose, prefill, onSuccess }) => {
         }`}
       >
         <div className="p-6 flex justify-between items-center border-b border-gray-100">
-          <h2 className="text-2xl font-bold text-[#7AC143]">Nuova Transazione</h2>
+          <h2 className="text-2xl font-bold text-black">Nuova Transazione</h2>
           <button
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded-xl transition-colors"

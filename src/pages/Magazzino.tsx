@@ -50,7 +50,7 @@ const Magazzino: React.FC = () => {
             <AlertCircle size={18} className={`${showLowStock ? 'text-red-500' : 'text-gray-400'} mr-2`} />
             <span>{lowStockCount} prodotti in esaurimento</span>
           </button>
-          <button className="bg-[#7AC143] text-white px-4 py-2 rounded-lg flex items-center hover:bg-[#5a9332] transition-colors">
+          <button className="bg-[#5D4037] text-white px-4 py-2 rounded-lg flex items-center hover:bg-[#4E342E] transition-colors">
             <Plus size={18} className="mr-1" />
             Nuovo Prodotto
           </button>
@@ -74,7 +74,7 @@ const Magazzino: React.FC = () => {
               <button
                 className={`px-3 py-1 text-sm rounded-full ${
                   selectedCategory === null
-                    ? 'bg-[#7AC143] text-white'
+                    ? 'bg-[#5D4037] text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
                 onClick={() => setSelectedCategory(null)}
@@ -86,7 +86,7 @@ const Magazzino: React.FC = () => {
                   key={category}
                   className={`px-3 py-1 text-sm rounded-full ${
                     selectedCategory === category
-                      ? 'bg-[#7AC143] text-white'
+                      ? 'bg-[#5D4037] text-white'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                   onClick={() => setSelectedCategory(category)}

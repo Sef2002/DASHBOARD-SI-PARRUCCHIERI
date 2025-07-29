@@ -53,12 +53,12 @@ const Staff = () => {
     <div className="h-full space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold text-[#7AC143] mb-2">Staff</h1>
+          <h1 className="text-3xl font-bold text-black mb-2">Staff</h1>
           <p className="text-gray-600">Gestisci il team del salone</p>
         </div>
         <button
           onClick={() => setIsNewStaffModalOpen(true)}
-          className="bg-[#7AC143] text-white px-6 py-3 rounded-xl flex items-center hover:bg-[#5a9332] transition-all duration-200 font-medium"
+          className="bg-black text-white px-6 py-3 rounded-xl flex items-center hover:bg-gray-800 transition-all duration-200 font-medium"
         >
           <Plus size={18} className="mr-2" />
           Nuovo Membro
@@ -84,7 +84,7 @@ const Staff = () => {
               <div
                 key={staff.id}
                 className={`p-6 cursor-pointer hover:bg-gray-50 transition-colors ${
-                  selectedStaff?.id === staff.id ? 'bg-gray-50 border-l-4 border-[#7AC143]' : ''
+                  selectedStaff?.id === staff.id ? 'bg-gray-50 border-l-4 border-black' : ''
                 }`}
                 onClick={() => handleSelect(staff)}
               >
@@ -97,7 +97,7 @@ const Staff = () => {
                     />
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-semibold text-[#7AC143]">{staff.name}</h3>
+                    <h3 className="font-semibold text-black">{staff.name}</h3>
                     <p className="text-sm text-gray-500">{staff.role || 'Staff Member'}</p>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ const Staff = () => {
                     />
                   </div>
                   <div className="ml-6">
-                    <h2 className="text-2xl font-bold text-[#7AC143]">{selectedStaff.name}</h2>
+                    <h2 className="text-2xl font-bold text-black">{selectedStaff.name}</h2>
                     <p className="text-gray-600 mt-1">{selectedStaff.role || 'Staff Member'}</p>
                   </div>
                 </div>
@@ -132,15 +132,15 @@ const Staff = () => {
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <Phone size={16} className="text-gray-400 mr-3" />
-                      <span className="text-[#7AC143]">{selectedStaff.phone || 'Non disponibile'}</span>
+                      <span className="text-black">{selectedStaff.phone || 'Non disponibile'}</span>
                     </div>
                     <div className="flex items-center">
                       <Mail size={16} className="text-gray-400 mr-3" />
-                      <span className="text-[#7AC143]">{selectedStaff.email || 'Non disponibile'}</span>
+                      <span className="text-black">{selectedStaff.email || 'Non disponibile'}</span>
                     </div>
                     <div className="flex items-center">
                       <Calendar size={16} className="text-gray-400 mr-3" />
-                      <span className="text-[#7AC143]">Inizio: {selectedStaff.start_date || 'Non disponibile'}</span>
+                      <span className="text-black">Inizio: {selectedStaff.start_date || 'Non disponibile'}</span>
                     </div>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ const Staff = () => {
                   <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Orario di Lavoro</h3>
                   <button
                     onClick={() => setIsEditAvailabilityOpen(true)}
-                    className="text-sm text-[#7AC143] hover:text-[#5a9332] font-medium transition-colors"
+                    className="text-sm text-black hover:text-gray-600 font-medium transition-colors"
                   >
                     Modifica →
                   </button>
@@ -161,7 +161,7 @@ const Staff = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                     {Object.entries(groupedAvailability).map(([weekday, slots]) => (
                       <div key={weekday} className="p-4 bg-gray-50 rounded-xl">
-                        <p className="font-semibold text-[#7AC143] capitalize mb-2">{weekday}</p>
+                        <p className="font-semibold text-black capitalize mb-2">{weekday}</p>
                         {slots.map((slot, idx) => (
                           <p key={idx} className="text-sm text-gray-700">
                             {slot.start_time} – {slot.end_time}

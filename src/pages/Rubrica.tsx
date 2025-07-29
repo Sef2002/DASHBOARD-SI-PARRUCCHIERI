@@ -72,12 +72,12 @@ const Rubrica: React.FC = () => {
     <div className="h-full space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold text-[#7AC143] mb-2">Rubrica</h1>
+          <h1 className="text-3xl font-bold text-black mb-2">Rubrica</h1>
           <p className="text-gray-600">Gestisci i contatti dei clienti</p>
         </div>
         <button
           onClick={() => setShowNewClientPanel(true)}
-          className="bg-[#7AC143] text-white px-6 py-3 rounded-xl flex items-center hover:bg-[#5a9332] transition-all duration-200 font-medium"
+          className="bg-black text-white px-6 py-3 rounded-xl flex items-center hover:bg-gray-800 transition-all duration-200 font-medium"
         >
           <Plus size={18} className="mr-2" />
           Nuovo Cliente
@@ -105,16 +105,16 @@ const Rubrica: React.FC = () => {
                 <div
                   key={client.id}
                   className={`p-6 cursor-pointer hover:bg-gray-50 transition-colors ${
-                    selectedClient === client.id ? 'bg-gray-50 border-l-4 border-[#7AC143]' : ''
+                    selectedClient === client.id ? 'bg-gray-50 border-l-4 border-black' : ''
                   }`}
                   onClick={() => setSelectedClient(client.id)}
                 >
                   <div className="flex items-center">
-                    <div className="flex-shrink-0 h-12 w-12 rounded-full bg-[#7AC143] text-white flex items-center justify-center font-semibold">
+                    <div className="flex-shrink-0 h-12 w-12 rounded-full bg-black text-white flex items-center justify-center font-semibold">
                       {client.name?.split(' ').map(n => n[0]).join('') || 'U'}
                     </div>
                     <div className="ml-4">
-                      <h3 className="font-semibold text-[#7AC143]">{client.name}</h3>
+                      <h3 className="font-semibold text-black">{client.name}</h3>
                       <div className="text-sm text-gray-500 flex items-center mt-1">
                         <Phone size={12} className="mr-1" />
                         {client.phone}
@@ -134,11 +134,11 @@ const Rubrica: React.FC = () => {
             <div className="p-6">
               <div className="flex justify-between items-start mb-8">
                 <div className="flex items-center">
-                  <div className="flex-shrink-0 h-20 w-20 rounded-full bg-[#7AC143] text-white flex items-center justify-center text-xl font-bold">
+                  <div className="flex-shrink-0 h-20 w-20 rounded-full bg-black text-white flex items-center justify-center text-xl font-bold">
                     {selectedClientData.name?.split(' ').map(n => n[0]).join('') || 'U'}
                   </div>
                   <div className="ml-6">
-                    <h2 className="text-2xl font-bold text-[#7AC143]">{selectedClientData.name}</h2>
+                    <h2 className="text-2xl font-bold text-black">{selectedClientData.name}</h2>
                     <p className="text-gray-600 mt-1">Cliente Abituale</p>
                   </div>
                 </div>
@@ -158,17 +158,17 @@ const Rubrica: React.FC = () => {
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <Phone size={16} className="text-gray-400 mr-3" />
-                      <span className="text-[#7AC143]">{selectedClientData.phone}</span>
+                      <span className="text-black">{selectedClientData.phone}</span>
                     </div>
                     {selectedClientData.email && (
                       <div className="flex items-center">
                         <span className="text-gray-400 mr-3">@</span>
-                        <span className="text-[#7AC143]">{selectedClientData.email}</span>
+                        <span className="text-black">{selectedClientData.email}</span>
                       </div>
                     )}
                     <div className="flex items-center">
                       <Clock size={16} className="text-gray-400 mr-3" />
-                      <span className="text-[#7AC143]">Visite totali: {selectedClientData.visitCount}</span>
+                      <span className="text-black">Visite totali: {selectedClientData.visitCount}</span>
                     </div>
                   </div>
                 </div>
@@ -178,16 +178,16 @@ const Rubrica: React.FC = () => {
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <Calendar size={16} className="text-gray-400 mr-3" />
-                      <span className="text-[#7AC143]">Ultima visita: {selectedClientData.lastVisit ? new Date(selectedClientData.lastVisit).toLocaleDateString('it-IT') : 'N/D'}</span>
+                      <span className="text-black">Ultima visita: {selectedClientData.lastVisit ? new Date(selectedClientData.lastVisit).toLocaleDateString('it-IT') : 'N/D'}</span>
                     </div>
                     <div className="flex items-center">
                       <Calendar size={16} className="text-gray-400 mr-3" />
                       {selectedClientData.nextVisit ? (
-                        <span className="text-[#7AC143]">Prossima visita: {new Date(selectedClientData.nextVisit).toLocaleDateString('it-IT')}</span>
+                        <span className="text-black">Prossima visita: {new Date(selectedClientData.nextVisit).toLocaleDateString('it-IT')}</span>
                       ) : (
                         <button
                           onClick={() => setShowCreateModal(true)}
-                          className="text-sm text-[#7AC143] underline hover:text-[#5a9332] transition-colors font-medium"
+                          className="text-sm text-black underline hover:text-gray-600 transition-colors font-medium"
                         >
                           Prenota ora →
                         </button>

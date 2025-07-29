@@ -74,7 +74,7 @@ const Layout = () => {
                 onClick={() => navigate(item.path)}
                 className={`w-full flex items-center justify-between px-4 py-3 text-sm font-medium rounded-lg transition-all duration-200 group ${
                   location.pathname === item.path
-                    ? 'bg-white text-[#7AC143]'
+                    ? 'bg-white text-black'
                     : 'text-gray-300 hover:text-white hover:bg-gray-900'
                 }`}
               >
@@ -138,7 +138,7 @@ const Layout = () => {
                       }}
                       className={`w-full flex items-center justify-between px-4 py-3 text-sm font-medium rounded-lg transition-all duration-200 ${
                         location.pathname === item.path
-                          ? 'bg-white text-[#7AC143]'
+                          ? 'bg-white text-black'
                           : 'text-gray-300 hover:text-white hover:bg-gray-900'
                       }`}
                     >
@@ -195,10 +195,10 @@ const Layout = () => {
             <div className="flex items-center space-x-4">
               <div className="hidden sm:flex items-center space-x-3">
                 <div className="text-right">
-                  <p className="text-sm font-medium text-white">Alket</p>
+                  <p className="text-sm font-medium">Alket</p>
                   <p className="text-xs text-gray-400">Administrator</p>
                 </div>
-                <div className="h-10 w-10 rounded-full bg-[#7AC143] text-white flex items-center justify-center font-semibold">
+                <div className="h-10 w-10 rounded-full bg-white text-black flex items-center justify-center font-semibold">
                   A
                 </div>
               </div>

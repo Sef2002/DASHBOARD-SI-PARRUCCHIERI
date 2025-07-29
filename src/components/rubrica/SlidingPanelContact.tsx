@@ -22,7 +22,7 @@ const SlidingPanelContact: React.FC<SlidingPanelContactProps> = ({ visible, onCl
       {/* Sliding Panel */}
       <div className="fixed right-0 top-0 w-[500px] h-full bg-white shadow-xl z-50 flex flex-col">
         <div className="flex justify-between items-center p-6 border-b border-gray-100">
-          <h2 className="text-2xl font-bold text-[#7AC143]">Nuovo Cliente</h2>
+          <h2 className="text-2xl font-bold text-black">Nuovo Cliente</h2>
           <button
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded-xl transition-colors"
