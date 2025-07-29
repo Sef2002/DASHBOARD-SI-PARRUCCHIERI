@@ -13,6 +13,7 @@ import Spese from './pages/Spese';
 import Promozioni from './pages/Promozioni';
 import Settings from './pages/Settings';
 import PaymentPage from './components/payment/PaymentPage';
+import Voiceflow from './pages/Voiceflow';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="staff" element={<Staff />} />
           <Route path="spese" element={<Spese />} />
           <Route path="promozioni" element={<Promozioni />} />
+          <Route path="voiceflow" element={<Voiceflow />} />
           <Route path="settings" element={<Settings />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
