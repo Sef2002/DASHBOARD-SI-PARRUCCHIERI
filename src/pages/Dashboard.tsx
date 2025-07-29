@@ -34,7 +34,7 @@ const Dashboard: React.FC = () => {
   return (
     <div className="h-full space-y-6">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-black mb-2">Buongiorno, Pietro</h1>
+        <h1 className="text-3xl font-bold text-black mb-2">Buongiorno, Ivan</h1>
         <p className="text-gray-600">Panoramica del {new Date().toLocaleDateString('it-IT', { weekday: 'long', day: 'numeric', month: 'long' })}</p>
       </div>
 
