@@ -124,10 +124,10 @@ const Promozioni: React.FC = () => {
           <h1 className="text-2xl font-bold text-gray-800">Promozioni</h1>
           <p className="text-gray-600">Gestisci offerte e sconti</p>
         </div>
+        <button className="bg-[#7AC143] text-white px-4 py-2 rounded-lg flex items-center hover:bg-[#5a9332] transition-colors">
           <Plus size={18} className="mr-1" />
           Nuova Promozione
         </button>
-      </div>
       </div>
       <div className="bg-white rounded-lg shadow mb-6">
         <div className="p-4 border-b border-gray-200">
