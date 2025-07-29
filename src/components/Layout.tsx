@@ -33,7 +33,7 @@ const sidebarItems = [
   { path: '/staff', name: 'Staff', icon: <Users size={20} /> },
   { path: '/spese', name: 'Spese', icon: <Wallet size={20} /> },
   { path: '/promozioni', name: 'Promozioni', icon: <Tag size={20} /> },
-  { path: '/voiceflow', name: 'Voiceflow', icon: <MessageSquare size={20} /> },
+  { path: '/voiceflow', name: 'ChatBot', icon: <MessageSquare size={20} /> },
   { path: '/settings', name: 'Impostazioni', icon: <Settings size={20} /> },
 ];
 
