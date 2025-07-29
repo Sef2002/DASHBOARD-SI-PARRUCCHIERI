@@ -152,12 +152,12 @@ const Agenda = () => {
     <div className="h-full space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold text-black mb-2">Agenda</h1>
+          <h1 className="text-3xl font-bold text-[#7AC143] mb-2">Agenda</h1>
           <p className="text-gray-600">Gestisci gli appuntamenti del salone</p>
         </div>
         <button
           onClick={() => setShowCreateModal(true)}
-          className="bg-black text-white px-6 py-3 rounded-xl flex items-center hover:bg-gray-800 transition-all duration-200 font-medium"
+          className="bg-[#7AC143] text-white px-6 py-3 rounded-xl flex items-center hover:bg-[#5a9332] transition-all duration-200 font-medium"
         >
           <Plus size={18} className="mr-2" /> Nuovo Appuntamento
         </button>
@@ -224,7 +224,7 @@ const Agenda = () => {
               onClick={() => setViewMode(mode)}
               className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
                 viewMode === mode
-                  ? 'bg-black text-white'
+                 ? 'bg-[#7AC143] text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
@@ -238,7 +238,7 @@ const Agenda = () => {
             onClick={() => setSelectedBarber('Tutti')}
             className={`px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all duration-200 ${
               selectedBarber === 'Tutti'
-                ? 'bg-black text-white'
+                ? 'bg-[#7AC143] text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >

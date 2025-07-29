@@ -82,7 +82,7 @@ const NewContactForm: React.FC<NewContactFormProps> = ({ onCreated }) => {
       <button
         onClick={handleSave}
         disabled={saving}
-        className="w-full bg-black text-white py-3 rounded-xl hover:bg-gray-800 transition-colors font-medium disabled:opacity-50"
+        className="w-full bg-[#7AC143] text-white py-3 rounded-xl hover:bg-[#5a9332] transition-colors font-medium disabled:opacity-50"
       >
         {saving ? 'Salvataggio...' : 'Salva Cliente'}
       </button>

@@ -282,7 +282,7 @@ export default function EditStaffAvailabilityModal({
         <button
           onClick={handleSave}
           disabled={loading}
-          className="mt-6 w-full rounded bg-[#1a1a1a] py-2 text-white disabled:opacity-50"
+          className="mt-6 w-full rounded bg-[#7AC143] py-2 text-white disabled:opacity-50 hover:bg-[#5a9332]"
         >
           {loading ? 'Salvataggio…' : 'Salva disponibilità'}
         </button>

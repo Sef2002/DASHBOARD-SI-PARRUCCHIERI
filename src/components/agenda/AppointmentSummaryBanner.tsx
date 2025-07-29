@@ -9,7 +9,7 @@ const AppointmentSummaryBanner = ({ appointment, onEdit, onPay, onDelete, onClos
       <div className="bg-white rounded-2xl shadow-xl w-[600px] relative">
         <div className="flex justify-between items-start p-6 border-b border-gray-100">
           <div>
-            <h2 className="text-2xl font-bold text-black mb-1">Riepilogo Prenotazione</h2>
+            <h2 className="text-2xl font-bold text-[#7AC143] mb-1">Riepilogo Prenotazione</h2>
             <p className="text-sm text-gray-500">Dettagli dell'appuntamento selezionato</p>
           </div>
           <button

@@ -125,6 +125,7 @@ const Promozioni: React.FC = () => {
           <p className="text-gray-600">Gestisci offerte e sconti</p>
         </div>
         <button className="bg-[#5D4037] text-white px-4 py-2 rounded-lg flex items-center hover:bg-[#4E342E] transition-colors">
+        <button className="bg-[#7AC143] text-white px-4 py-2 rounded-lg flex items-center hover:bg-[#5a9332] transition-colors">
           <Plus size={18} className="mr-1" />
           Nuova Promozione
         </button>
@@ -147,7 +148,7 @@ const Promozioni: React.FC = () => {
               <button
                 className={`px-3 py-1 text-sm rounded-full ${
                   statusFilter === null
-                    ? 'bg-[#5D4037] text-white'
+                   ? 'bg-[#7AC143] text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
                 onClick={() => setStatusFilter(null)}
@@ -157,7 +158,7 @@ const Promozioni: React.FC = () => {
               <button
                 className={`px-3 py-1 text-sm rounded-full ${
                   statusFilter === 'active'
-                    ? 'bg-[#5D4037] text-white'
+                   ? 'bg-[#7AC143] text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
                 onClick={() => setStatusFilter('active')}
@@ -167,7 +168,7 @@ const Promozioni: React.FC = () => {
               <button
                 className={`px-3 py-1 text-sm rounded-full ${
                   statusFilter === 'scheduled'
-                    ? 'bg-[#5D4037] text-white'
+                   ? 'bg-[#7AC143] text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
                 onClick={() => setStatusFilter('scheduled')}
@@ -177,7 +178,7 @@ const Promozioni: React.FC = () => {
               <button
                 className={`px-3 py-1 text-sm rounded-full ${
                   statusFilter === 'expired'
-                    ? 'bg-[#5D4037] text-white'
+                   ? 'bg-[#7AC143] text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
                 onClick={() => setStatusFilter('expired')}

@@ -168,7 +168,7 @@ const NewStaffModal = ({ open, onOpenChange, onCreated }) => {
           </button>
           <button
             onClick={handleSave}
-            className="px-6 py-3 rounded-xl bg-black text-white hover:bg-gray-800 font-medium transition-colors"
+            className="px-6 py-3 rounded-xl bg-[#7AC143] text-white hover:bg-[#5a9332] font-medium transition-colors"
           >
             Salva Staff
           </button>

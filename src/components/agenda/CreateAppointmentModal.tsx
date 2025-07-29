@@ -119,7 +119,7 @@ const CreateAppointmentModal = ({
       <div className="bg-white rounded-2xl shadow-xl w-[500px] max-h-[90vh] overflow-y-auto">
         {/* Header ------------------------------------------------------- */}
         <div className="flex justify-between items-center p-6 border-b border-gray-100">
-          <h2 className="text-2xl font-bold text-black">Nuovo Appuntamento</h2>
+          <h2 className="text-2xl font-bold text-[#7AC143]">Nuovo Appuntamento</h2>
           <button
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded-xl transition-colors"
@@ -261,7 +261,7 @@ const CreateAppointmentModal = ({
           </button>
           <button
             onClick={handleCreate}
-            className="px-6 py-3 rounded-xl bg-black text-white hover:bg-gray-800 font-medium transition-colors"
+            className="px-6 py-3 rounded-xl bg-[#7AC143] text-white hover:bg-[#5a9332] font-medium transition-colors"
           >
             Crea Appuntamento
           </button>

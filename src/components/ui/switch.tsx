@@ -15,7 +15,7 @@ const switchVariants = cva(
   {
     variants: {
       checked: {
-        true: "bg-black",
+        true: "bg-[#7AC143]",
         false: "bg-gray-200",
       },
     },
